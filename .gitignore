@@ -1,0 +1,21 @@
+# Necessary files
+isolicence.*
+pscd-new
+
+# Output
+*.o
+*.elf
+boot.exe
+/fromage
+fromage.bin
+fromage.cue
+
+# Python
+*.pyc
+*.pyo
+__pycache__
+.mypy_cache
+
+# VIM
+.sw?
+.*.sw?

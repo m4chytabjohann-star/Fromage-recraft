@@ -1,0 +1,28 @@
+# EXPERIMENTAL / UNTESTED: builds fromage on GitHub's servers.
+# You must fill in the two TODO steps: how to obtain the mipsel-elf toolchain
+# and candyk-psx (see candyk-psx's own README for its build steps).
+name: build
+on: [workflow_dispatch, push]
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential python3 python3-numpy python3-scipy python3-pil genisoimage
+      - name: TODO toolchain (mipsel-elf-gcc) and candyk-psx
+        run: |
+          echo "Install mipsel-elf toolchain + candyk-psx here and export CANDYK=<path>"
+          exit 1
+      - name: Build
+        run: |
+          mkdir -p obj
+          make CANDYK=$CANDYK
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fromage-survival
+          path: |
+            fromage.bin
+            fromage.cue
