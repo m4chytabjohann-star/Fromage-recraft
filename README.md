@@ -1,6 +1,6 @@
-# fromage
+# fromage recraft
 
-fromage is a voxel engine implementation for the PlayStation 1 video game console.
+fromage recraft is a voxel engine implementation for the PlayStation 1 video game console. original fromage by asie.
 
 ## Compilation
 
