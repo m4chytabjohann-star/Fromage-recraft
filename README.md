@@ -1,4 +1,4 @@
-# fromage recraft
+# fromage recraft (Minecraft PlayStation Edition)
 
 fromage recraft is a voxel engine implementation for the PlayStation 1 video game console. original fromage by asie.
 
